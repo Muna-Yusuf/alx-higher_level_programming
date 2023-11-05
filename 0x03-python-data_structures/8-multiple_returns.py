@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    x = tuple(sentence)
-    leng = len(x)
+    leng = len(sentence)
     if leng == 0:
         return (None)
-    frist = x[0]
+    frist = sentence[0]
     return (leng, frist)
