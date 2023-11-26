@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Module for add_integer mothod"""
+"""Module for add_integer mothod
+
+   Function that divides all elements of a matrix.
+   """
 
 
 def matrix_divided(matrix, div):
@@ -7,7 +10,7 @@ def matrix_divided(matrix, div):
 
        Args:
             matrix: A list of lists of integers or floats.
-            div: The number that will be divided by the list. 
+            div: The number that will be divided by the list.
        Raises:
             TypeError: If the list are not in (int, float).
             TypeError: If rows of the matrix are not the same size.
@@ -33,7 +36,7 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
 
     return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
-    
+
 
 if __name__ == "__main__":
     import doctest
