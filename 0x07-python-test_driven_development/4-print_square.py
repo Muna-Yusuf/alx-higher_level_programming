@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module for print_square mothod
+
+""" Module for print_square mothod
    function that prints a square
    with the character #.
 
