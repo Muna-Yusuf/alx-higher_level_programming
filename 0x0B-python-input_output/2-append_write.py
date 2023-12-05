@@ -3,6 +3,6 @@
 
 
 def write_file(filename="", text=""):
-    """ reads a text file (UTF8) and prints it to stdout."""
-    with open(filename, "a", encoding='utf-8') as f:
+    """ function that appends a string at the end of a text file (UTF8)"""
+    with open(filename, "a", encoding="utf-8") as f:
         return f.write(text)
