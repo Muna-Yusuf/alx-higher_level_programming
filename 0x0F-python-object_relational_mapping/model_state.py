@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists states"""
+"""Lists all states from database hbtn_0e_0_usa."""
 
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
@@ -10,7 +10,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    """Class representing the states table"""
+    """Class representing the states table."""
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False,
                 autoincrement=True, unique=True)

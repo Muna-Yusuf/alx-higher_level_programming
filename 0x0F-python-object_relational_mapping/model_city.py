@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists states"""
+"""Lists all states from database hbtn_0e_6_usa."""
 
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
@@ -8,7 +8,7 @@ Base = declarative_base()
 
 
 class City(Base):
-    """Class representing the states table"""
+    """Class representing the states table."""
     __tablename__ = 'cities'
 
     id = Column(Integer, nullable=False, primary_key=True,
